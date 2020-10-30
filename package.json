@@ -9,9 +9,11 @@
     },
     "author": "fjt",
     "devDependencies": {
+        "@types/lodash": "^4.14.164",
         "@types/node": "^10.3.3"
     },
     "dependencies": {
+        "lodash": "^4.17.20",
         "typescript": "^2.9.2"
     }
 }
