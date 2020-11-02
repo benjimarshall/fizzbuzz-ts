@@ -4,12 +4,12 @@ function insertFezz(responseArray: string[]): string[] {
     const bIndex = responseArray.findIndex(response => response.startsWith("B"));
     const insertionPoint = bIndex !== -1 ? bIndex : responseArray.length;
 
-    return [...responseArray.slice(0, insertionPoint), "Fezz", ...responseArray.slice(insertionPoint)]  ;
+    return [...responseArray.slice(0, insertionPoint), "Fezz", ...responseArray.slice(insertionPoint)];
 }
 
 function fizzbuzz(limit: number): string[] {
     return _.range(1, limit).map(fizzbuzzGetResponse)
-            .map((response, i) => response === "" ? (i + 1).toString() : response);
+        .map((response, i) => response === "" ? (i + 1).toString() : response);
 }
 
 function fizzbuzzGetResponse(i: number) {
