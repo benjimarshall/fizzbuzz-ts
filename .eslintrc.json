@@ -33,6 +33,14 @@
             "error",
             "smart"
         ],
-        "@typescript-eslint/explicit-function-return-type": "error"
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "space-infix-ops": ["error"],
+        "arrow-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ]
     }
 }
