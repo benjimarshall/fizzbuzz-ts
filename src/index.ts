@@ -31,5 +31,3 @@ function playFizzBuzz(): void {
         console.log(element);
     });
 }
-
-// playFizzBuzz();

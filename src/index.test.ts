@@ -1,4 +1,4 @@
-import {fizzbuzz, fizzbuzzGetResponse} from './index';
+import { fizzbuzz, fizzbuzzGetResponse } from './index';
 import * as _ from 'lodash';
 
 test('Bang on 7', () => {
