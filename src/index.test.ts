@@ -1,39 +1,39 @@
 import { fizzbuzz, fizzbuzzGetResponse } from './index';
 import * as _ from 'lodash';
 
-test('Bang on 7', () => {
+test('Should output "Bang" when input is 7', () => {
     expect(fizzbuzzGetResponse(7)).toBe('Bang');
 });
 
-test('8 on 8', () => {
+test('Should output "8" when input is 8', () => {
     expect(fizzbuzzGetResponse(8)).toBe('8');
 });
 
-test('Fizz on 9', () => {
+test('Should output "Fizz" when input is 9', () => {
     expect(fizzbuzzGetResponse(9)).toBe('Fizz');
 });
 
-test('Buzz on 10', () => {
+test('Should output "Buzz" when input is 10', () => {
     expect(fizzbuzzGetResponse(10)).toBe('Buzz');
 });
 
-test('FizzBuzz on 15', () => {
+test('Should output "FizzBuzz" when input is 15', () => {
     expect(fizzbuzzGetResponse(15)).toBe('FizzBuzz');
 });
 
-test('FezzBuzz on 65', () => {
+test('Should output "FezzBuzz" when input is 65', () => {
     expect(fizzbuzzGetResponse(65)).toBe('FezzBuzz');
 });
 
-test('Bong on 165', () => {
+test('Should output "Bong" when input is 165', () => {
     expect(fizzbuzzGetResponse(165)).toBe('Bong');
 });
 
-test('FizzFezzBuzz on 195', () => {
+test('Should output "FizzFezzBuzz" when input is 195', () => {
     expect(fizzbuzzGetResponse(195)).toBe('FizzFezzBuzz');
 });
 
-test('BuzzFizz on 255', () => {
+test('Should output "BuzzFizz" when input is 255', () => {
     expect(fizzbuzzGetResponse(255)).toBe('BuzzFizz');
 });
 
@@ -45,7 +45,7 @@ function hasReplacingFactor(n: number): boolean {
            n % 13 === 0;
 }
 
-test('Random number without a replacing factor gives the number', () => {
+test('Should output the number when input is a random number without a replacing factor', () => {
     let testNumber;
     do {
         testNumber = _.random(0, 1000000);
@@ -54,7 +54,7 @@ test('Random number without a replacing factor gives the number', () => {
     expect(fizzbuzzGetResponse(testNumber)).toBe(testNumber.toString());
 });
 
-test('Random number with 11 as a factor and not 13 gives Bong', () => {
+test('Should output "Bong" when input is a random number with 11 as a factor and not 13', () => {
     let testNumber;
     do {
         testNumber = _.random(0, 1000000);
@@ -64,7 +64,7 @@ test('Random number with 11 as a factor and not 13 gives Bong', () => {
     expect(fizzbuzzGetResponse(testNumber)).toBe('Bong');
 });
 
-test('Run Fizzbuzz for 20', () => {
+test('Should play Fizzbuzz correctly up to 20', () => {
     expect(fizzbuzz(20)).toEqual([
         '1',
         '2',
